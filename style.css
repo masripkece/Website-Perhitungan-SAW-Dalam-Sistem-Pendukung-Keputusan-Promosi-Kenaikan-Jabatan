@@ -1,0 +1,237 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset & Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  color: #00e5ff;
+  text-align: center;
+  padding: 30px 15px 20px;
+  border-bottom: 2px solid #00e5ff66;
+  box-shadow: 0 0 15px #00e5ff55;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px #00e5ffcc);
+}
+
+header h1 {
+  font-size: 28px;
+  text-shadow: 0 0 6px #00e5ff;
+}
+
+header h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b0dfff;
+}
+
+/* Navigasi Futuristik */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 12px 0;
+  border-bottom: 1px solid #00e5ff44;
+}
+
+nav ul li {
+  margin: 6px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #00e5ff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #00e5ff;
+  color: #001a2e;
+  box-shadow: 0 0 12px #00e5ffaa;
+  transform: scale(1.05);
+}
+
+/* Konten Utama */
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+}
+
+/* Judul Halaman */
+main h2 {
+  font-size: 26px;
+  color: #00e5ff;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 0 0 8px #00e5ff88;
+}
+
+/* Tabel Futuristik */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #0018f444;
+  color: #000000;
+}
+
+table thead {
+  background-color: #0018f444;
+  color: #00e5ff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+table tbody tr:hover {
+  background-color: #00e5ff11;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #00e5ff55;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgb(33, 13, 211);
+  backdrop-filter: blur(4px);
+}
+
+form input:focus {
+  outline: none;
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px #00e5ff88;
+}
+
+form button {
+  background-color: #00e5ff;
+  color: #001a2e;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #00c0e0;
+  transform: scale(1.04);
+  box-shadow: 0 0 12px #00e5ffaa;
+}
+
+/* Daftar Anggota */
+.anggota {
+  list-style: none;
+  font-size: 18px;
+  color: #d0f0ff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.anggota li {
+  margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 25px;
+    margin: 20px;
+  }
+}
+
+/* Logo Tengah Beranda */
+.beranda-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.beranda-logo img {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00e5ff99;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.beranda-logo img:hover {
+  transform: scale(1.08);
+}
+
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #00e5ff55;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
+}

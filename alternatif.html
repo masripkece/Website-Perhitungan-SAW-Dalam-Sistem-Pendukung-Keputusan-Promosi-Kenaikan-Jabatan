@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternatif - SAW</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/saw.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="img/UPGRIS-logo-normal (1).png" alt="Logo Kelompok" class="logo">
+    <h1>Website Perhitungan SAW</h1>
+    <h1>Dalam Sistem Pendukung Keputusan Promosi Kenaikan Jabatan</h1>
+    <h2>Kelompok 3</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kriteria.html">Kriteria</a></li>
+        <li><a href="alternatif.html" class="active">Alternatif</a></li>
+        <li><a href="normalisasi.html">Normalisasi</a></li>
+        <li><a href="perangkingan.html">Perangkingan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Input / Edit Data Alternatif</h2>
+    <form id="form-alternatif" style="max-width: 500px; margin: auto;">
+      <input type="text" id="nama" placeholder="Nama" required><br><br>
+      <input type="number" step="0.01" id="kerja" placeholder="Masa Kerja (0.2 - 0.6)" required><br><br>
+      <input type="number" step="0.01" id="kinerja" placeholder="Penilaian Kinerja (0 - 1)" required><br><br>
+      <input type="number" step="0.01" id="perilaku" placeholder="Penilaian Perilaku (0 - 1)" required><br><br>
+      <button type="submit">Tambah / Simpan</button>
+    </form>
+
+    <h3>Daftar Pegawai</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: 20px auto; background-color: white;">
+      <thead style="background-color: #0066cc; color: white;">
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Masa Kerja</th>
+          <th>Kinerja</th>
+          <th>Perilaku</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tabel-alternatif">
+        <!-- Diisi via JavaScript -->
+        
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

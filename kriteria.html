@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kriteria - SAW</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="img/UPGRIS-logo-normal (1).png" alt="Logo Kelompok" class="logo">
+    <h1>Website Perhitungan SAW</h1>
+    <h1>Dalam Sistem Pendukung Keputusan Promosi Kenaikan Jabatan</h1>
+    <h2>Kelompok 3</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kriteria.html" class="active">Kriteria</a></li>
+        <li><a href="alternatif.html">Alternatif</a></li>
+        <li><a href="normalisasi.html">Normalisasi</a></li>
+        <li><a href="perangkingan.html">Perangkingan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Daftar Kriteria dan Penjabaran</h2>
+
+    <h3>Kriteria dan Bobot Preferensi</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto; background-color: white;">
+      <thead style="background-color: #0066cc; color: white;">
+        <tr>
+          <th>No</th>
+          <th>Kriteria</th>
+          <th>Bobot</th>
+          <th>Jenis Atribut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Masa Kerja</td><td>0.25</td><td>Benefit</td></tr>
+        <tr><td>2</td><td>Penilaian Kinerja</td><td>0.50</td><td>Benefit</td></tr>
+        <tr><td>3</td><td>Penilaian Perilaku</td><td>0.25</td><td>Benefit</td></tr>
+      </tbody>
+    </table>
+
+    <br><h3>1. Kriteria Masa Kerja</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto; background-color: white;">
+      <thead style="background-color: #0066cc; color: white;">
+        <tr><th>Range</th><th>Bobot</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2 Tahun</td><td>0.2</td></tr>
+        <tr><td>3 Tahun</td><td>0.4</td></tr>
+        <tr><td>4 Tahun</td><td>0.6</td></tr>
+        <tr><td>5 Tahun</td><td>0.8</td></tr>
+        <tr><td>> 5 Tahun</td><td>1</td></tr>
+      </tbody>
+    </table>
+
+    <br><h3>2. Penilaian Kinerja</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto; background-color: white;">
+      <thead style="background-color: #0066cc; color: white;">
+        <tr><th>Range Pencapaian</th><th>Skala</th><th>Bobot</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>< 60% (Tidak Baik)</td><td>1</td><td>0.2</td></tr>
+        <tr><td>60% - < 75% (Perlu Perbaikan)</td><td>2</td><td>0.3</td></tr>
+        <tr><td>75% - < 90% (Baik)</td><td>3</td><td>0.5</td></tr>
+        <tr><td>90% - < 105% (Lebih Baik)</td><td>4</td><td>0.7</td></tr>
+        <tr><td>105% - < 120% (Sangat Baik)</td><td>5</td><td>0.8</td></tr>
+        <tr><td>> 120% (Istimewa)</td><td>6</td><td>1</td></tr>
+      </tbody>
+    </table>
+
+    <br><h3>3. Penilaian Perilaku</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto; background-color: white;">
+      <thead style="background-color: #0066cc; color: white;">
+        <tr><th>Range Perilaku</th><th>Skala</th><th>Bobot</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>< 40% (Tidak Baik)</td><td>1</td><td>0.2</td></tr>
+        <tr><td>40% - < 60% (Perlu Perbaikan)</td><td>2</td><td>0.3</td></tr>
+        <tr><td>60% - < 80% (Baik)</td><td>3</td><td>0.5</td></tr>
+        <tr><td>80% - < 100% (Lebih Baik)</td><td>4</td><td>0.7</td></tr>
+        <tr><td>80% - < 100% dan jadi panutan (Sangat Baik)</td><td>5</td><td>0.8</td></tr>
+        <tr><td>80% - < 100%, panutan & agen perubahan (Istimewa)</td><td>6</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
